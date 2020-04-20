@@ -1,0 +1,19 @@
+<div class="widget">
+  <div class="widget__top">
+    <span class="widget__date">Date</span>
+    <span class="material-icons delete-widget">
+      clear
+    </span>
+  </div>
+  <span class="widget__text-center">Add your note</span>
+  <input type="text" #noteText (keyup.enter)="addNoteText(noteText)" />
+  <app-note *ngFor="let note of noteInfo.notes" [noteItem]="note"></app-note>
+  <div class="widget__footer">
+    <span class="material-icons">
+      add
+    </span>
+    <span class="material-icons">
+      create
+    </span>
+  </div>
+</div>

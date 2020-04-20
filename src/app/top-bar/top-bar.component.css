@@ -1,0 +1,23 @@
+.top-bar {
+  border-bottom: 2px solid rgba(49, 49, 49, 0.507);
+}
+
+.top-bar__title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-bar__links-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+  padding: 50px 0px 0px 0px;
+}

@@ -1,0 +1,38 @@
+.widget {
+  height: 300px;
+  background-color: #fff;
+  width: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px 0px 0px;
+  justify-content: space-between;
+  max-height: 300px;
+  padding: 10px;
+}
+
+.widget__top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px rgb(167, 167, 167) dotted;
+}
+
+.delete-widget {
+  cursor: pointer;
+  color: red;
+}
+
+.widget__date {
+  text-align: center;
+  margin: 0px 0px 0px 10px;
+}
+
+.widget__footer {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px rgb(167, 167, 167) dotted;
+}
+
+.widget__footer span {
+  cursor: pointer;
+}

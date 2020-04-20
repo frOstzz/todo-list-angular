@@ -1,0 +1,10 @@
+<div class="widget__content">
+  <span appBackground #addedNoteText class="widget__note-text">
+    {{ noteItem }}
+  </span>
+  <span
+    (isDelete)="deleteNote(addedNoteText)"
+    class="material-icons widget__delete-note"
+    >clear
+  </span>
+</div>
