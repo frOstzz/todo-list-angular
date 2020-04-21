@@ -36,3 +36,8 @@
 .widget__footer span {
   cursor: pointer;
 }
+
+.widget__text-center {
+  text-align: center;
+  font-weight: bold;
+}

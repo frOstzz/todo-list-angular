@@ -8,14 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class NoteWidgetComponent implements OnInit {
   noteInfo = {
     date: new Date(2020, 3, 13),
-    notes: ['text', '123'],
+    notes: [],
   };
 
-  deleteNote(addedNoteText: HTMLSpanElement): void {
-    this.noteInfo.notes.splice(
-      this.noteInfo.notes.indexOf(addedNoteText.firstChild.textContent),
-      1
-    );
+  deleteNote(event): void {
+    this.noteInfo.notes.splice(this.noteInfo.notes.indexOf(event.innerText), 1);
   }
 
   addNoteText(noteText: HTMLInputElement): void {

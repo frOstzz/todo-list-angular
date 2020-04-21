@@ -9,19 +9,17 @@
 .widget__delete-note {
   font-size: 13px;
   cursor: pointer;
-}
-
-.widget__text-center {
-  text-align: center;
-  font-weight: bold;
+  width: 10px;
 }
 
 .widget__content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: auto;
   overflow: auto;
   overflow-x: hidden;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .widget__content input {

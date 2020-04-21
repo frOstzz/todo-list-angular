@@ -1,5 +1,4 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
-import { EventEmitter } from 'protractor';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-note',
@@ -7,11 +6,11 @@ import { EventEmitter } from 'protractor';
   styleUrls: ['./note.component.css'],
 })
 export class NoteComponent implements OnInit {
-  @Input() noteItem;
-  @Output() deleted = new EventEmitter();
+  @Input() noteItem: string;
+  @Output() deleted = new EventEmitter<string>();
 
-  isDelete() {
-    this.deleted.emit('complete');
+  isDeleted(value: string) {
+    this.deleted.emit(value);
   }
 
   constructor() {}
